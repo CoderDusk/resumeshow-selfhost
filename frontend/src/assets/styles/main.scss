@@ -1,0 +1,56 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #333;
+  background-color: #f5f7fa;
+  line-height: 1.5;
+}
+
+a {
+  color: #409eff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+/* 打印样式优化 */
+@media print {
+  body {
+    background-color: white;
+  }
+
+  .resume-container {
+    box-shadow: none !important;
+    max-width: 100% !important;
+  }
+
+  .privacy-section {
+    display: none !important;
+  }
+}

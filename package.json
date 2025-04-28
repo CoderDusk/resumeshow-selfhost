@@ -1,0 +1,12 @@
+{
+  "name": "my-resume",
+  "version": "1.0.0",
+  "description": "简历展示网站",
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
+    "install-all": "concurrently \"cd frontend && npm install\" \"cd backend && npm install\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
